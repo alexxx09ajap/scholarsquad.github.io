@@ -1,0 +1,145 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6; /* Mejora la legibilidad al aumentar el espacio entre líneas */
+    margin: 0; /* Elimina el margen predeterminado del body */
+    padding: 20px; /* Agrega un poco de padding al body */
+    background-image: url('img/fondo.jpg'); /* Cambia 'fondo.jpg' al nombre de tu imagen */
+    background-size: cover; /* Asegura que la imagen cubra toda el área del fondo */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    color: #000; /* Color del texto general en negro */
+}
+
+h1, h2 {
+    margin-bottom: 20px; /* Espacio debajo de los encabezados */
+    color: #333; /* Color para mayor contraste */
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7); /* Sombra para dar profundidad */
+}
+
+p {
+    margin-bottom: 15px; /* Espacio entre párrafos */
+    color: #333; /* Color negro para el texto de los párrafos */
+}
+
+pre {
+    background-color: rgba(0, 0, 0, 0.85); /* Fondo negro semitransparente para el bloque de código */
+    border: 1px solid #ced4da; /* Borde claro para el bloque de código */
+    padding: 15px; /* Espaciado interno */
+    border-radius: 8px; /* Esquinas redondeadas */
+    overflow-x: auto; /* Permite desplazamiento horizontal si el contenido es más ancho */
+    color: #f8f9fa; /* Color del texto en el bloque de código */
+    font-family: 'Courier New', Courier, monospace; /* Fuente monoespaciada */
+    white-space: pre-wrap; /* Permite que el texto se ajuste automáticamente */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidad al bloque de código */
+}
+
+/* Estilos para el código resaltado */
+.code {
+    display: block; /* Asegura que cada línea esté en una nueva línea */
+}
+
+.code .tag {
+    color: #569cd6; /* Color para las etiquetas */
+}
+
+.code .attribute {
+    color: #9cdcfe; /* Color para los atributos */
+}
+
+.code .value {
+    color: #ce9178; /* Color para los valores de los atributos */
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 30px; /* Espacio encima del pie de página */
+    padding: 20px; /* Aumenta el padding en el pie de página */
+    text-align: center; /* Centra el texto en el pie de página */
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente negro */
+    border-top: 1px solid #ced4da; /* Borde superior del pie de página */
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad al pie de página */
+    color: #f8f9fa; /* Color del texto en el pie de página (blanco) */
+}
+
+.container {
+    max-width: 1200px; /* Ancho máximo para el contenedor */
+    margin: auto; /* Centra el contenedor */
+    padding: 20px; /* Padding dentro del contenedor */
+    background-color: rgba(255, 255, 255, 0.95); /* Fondo del contenedor con un poco de transparencia */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad al contenedor */
+}
+
+/* Estilos para el menú de navegación */
+nav {
+    margin-top: 20px; /* Espacio encima del menú de navegación */
+}
+
+.nav-links {
+    list-style: none; /* Elimina viñetas de la lista */
+    padding: 0; /* Elimina padding predeterminado */
+    display: flex; /* Alinea los enlaces en una fila */
+    justify-content: center; /* Centra los enlaces */
+    margin-bottom: 20px; /* Espacio debajo del menú de navegación */
+}
+
+.nav-links li {
+    margin-right: 20px; /* Espacio entre los enlaces */
+}
+
+.nav-links a {
+    text-decoration: none; /* Elimina subrayado */
+    color: #007bff; /* Color azul para los enlaces */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transición suave para el color y el efecto de transformación */
+    padding: 5px 10px; /* Padding en los enlaces para hacerlos más clicables */
+    border-radius: 5px; /* Esquinas redondeadas */
+}
+
+.nav-links a:hover {
+    color: #0056b3; /* Color más oscuro en hover */
+    transform: scale(1.05); /* Efecto de aumento en hover */
+}
+
+/* Estilo adicional para los enlaces */
+a {
+    color: inherit; /* Hereda el color del padre */
+}
+
+/* Estilos para las secciones */
+.section {
+    margin: 20px 0; /* Espaciado entre secciones */
+    padding: 20px; /* Espaciado interno en secciones */
+    border-radius: 8px; /* Esquinas redondeadas */
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave para las secciones */
+}
+
+.form-control {
+    transition: box-shadow 0.3s ease; /* Transición suave para el borde */
+}
+
+.form-control:focus {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra azul al enfocar el input */
+}
+
+.header-content {
+    display: flex; /* Utiliza flexbox para alinear elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    gap: 20px; /* Espacio entre las imágenes y el título */
+}
+
+.header-image {
+    width: 80px; /* Ajusta el tamaño de las imágenes según tu preferencia */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 5px; /* Esquinas redondeadas para las imágenes */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidad */
+}
+
+h1 {
+    font-size: 2.5rem; /* Aumenta el tamaño del texto del título */
+    margin: 0; /* Elimina márgenes predeterminados */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para dar profundidad al texto */
+}

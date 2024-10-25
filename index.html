@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a HTML y sus etiquetas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-primary text-white text-center p-4">
+        <div class="header-content">
+            <img src="img/imagent1.png" alt="Imagen 1" class="header-image">
+            <h1>Introducción a HTML y sus etiquetas</h1>
+            <img src="img/imagent2.png" alt="Imagen 2" class="header-image">
+        </div>
+    </header>
+    
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Inicio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <section>
+            <h2>Estructura Básica de HTML</h2>
+            <p>HTML (HyperText Markup Language) es el lenguaje de marcado estándar utilizado para crear páginas web. Se utiliza para estructurar el contenido en la web mediante etiquetas que indican cómo debe ser presentado.</p>
+            
+            <h3>Ejemplo de Estructura HTML</h3>
+            <pre><code class="code">
+                &lt;<span class="tag">!DOCTYPE</span> html&gt;
+                &lt;<span class="tag">html</span> lang="<span class="attribute">es</span>"&gt;
+                    &lt;<span class="tag">head</span>&gt;
+                        &lt;<span class="tag">meta</span> charset="<span class="attribute">UTF-8</span>"&gt;
+                        &lt;<span class="tag">title</span>&gt;<span class="value">Ejemplo de Estructura HTML</span>&lt;/<span class="tag">title</span>&gt;
+                    &lt;/<span class="tag">head</span>&gt;
+                    &lt;<span class="tag">body</span>&gt;
+                        &lt;<span class="tag">h1</span>&gt;<span class="value">Hola, Mundo!</span>&lt;/<span class="tag">h1</span>&gt;
+                        &lt;<span class="tag">p</span>&gt;<span class="value">Este es un ejemplo de un documento HTML básico.</span>&lt;/<span class="tag">p</span>&gt;
+                        &lt;<span class="tag">a</span> href="<span class="attribute">https://www.ejemplo.com</span>"&gt;<span class="value">Visita Ejemplo</span>&lt;/<span class="tag">a</span>&gt;
+                    &lt;/<span class="tag">body</span>&gt;
+                &lt;/<span class="tag">html</span>&gt;
+            </code></pre>
+        
+            <h3>Visualización del Ejemplo</h3>
+            <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
+                <h1>Hola, Mundo!</h1>
+                <p>Este es un ejemplo de un documento HTML básico.</p>
+                <a href="https://www.ejemplo.com">Visita Ejemplo</a>
+            </div>
+        </section>                        
+
+        <section>
+            <h2>Etiquetas de Estructura Básica</h2>
+            <ul>
+                <li>
+                    <strong>&lt;html&gt;</strong>: Esta etiqueta define el inicio y el final de un documento HTML. Es el contenedor principal que indica al navegador que el contenido dentro de ella es un documento HTML.
+                    <pre class="code"><code>
+                        &lt;<span class="tag">html</span> lang="<span class="attribute">es</span>"&gt;
+                    </code></pre>
+                    <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
+                        <span style="color: red;">HTML</span>
+                    </div>
+                </li>
+                <li>
+                    <strong>&lt;head&gt;</strong>: Contiene metadatos sobre el documento, como el título, la vinculación de hojas de estilo y scripts. Estos datos no son visibles para el usuario, pero son cruciales para el SEO y el funcionamiento del documento.
+                    <pre class="code"><code>
+                        &lt;<span class="tag">head</span>&gt;<br>
+                        &nbsp;&nbsp;&lt;<span class="tag">title</span>&gt;Mi Página Web&lt;/<span class="tag">title</span>&gt;<br>
+                        &lt;/<span class="tag">head</span>&gt;
+                    </code></pre>
+                    <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
+                        <title>Mi Página Web</title>
+                    </div>
+                </li>
+                <li>
+                    <strong>&lt;title&gt;</strong>: Define el título del documento, que aparece en la pestaña del navegador y es importante para la optimización en motores de búsqueda (SEO).
+                    <pre class="code"><code>
+                        &lt;<span class="tag">title</span>&gt;Bienvenido a Mi Página&lt;/<span class="tag">title</span>&gt;
+                    </code></pre>
+                    <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
+                        <h1>Bienvenido a Mi Página</h1>
+                    </div>
+                </li>
+                <li>
+                    <strong>&lt;meta&gt;</strong>: Proporciona metadatos sobre el HTML, como el conjunto de caracteres del documento, la descripción y las palabras clave. Es esencial para mejorar el SEO y la accesibilidad.
+                    <pre class="code"><code>
+                        &lt;<span class="tag">meta</span> charset="<span class="attribute">UTF-8</span>"&gt;<br>
+                        &lt;<span class="tag">meta</span> name="<span class="attribute">description</span>" content="<span class="value">Descripción de mi página web.</span>"&gt;
+                    </code></pre>
+                    <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
+                        <p>Descripción de mi página web.</p>
+                    </div>
+                </li>
+                <li>
+                    <strong>&lt;link&gt;</strong>: Se utiliza para vincular a recursos externos, como hojas de estilo CSS, que son necesarias para dar formato al documento.
+                    <pre class="code"><code>
+                        &lt;<span class="tag">link</span> rel="<span class="attribute">stylesheet</span>" href="<span class="value">styles.css</span>"&gt;
+                    </code></pre>
+                    <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
+                        <link rel="stylesheet" href="styles.css">
+                    </div>
+                </li>
+                <li>
+                    <strong>&lt;style&gt;</strong>: Permite definir estilos CSS internos que se aplican a los elementos del documento. Se usa principalmente para estilos que son específicos de la página actual.
+                    <pre class="code"><code>
+                        &lt;<span class="tag">style</span>&gt;<br>
+                        &nbsp;&nbsp;<span class="tag">body</span> { background-color: <span class="value">#f0f0f0</span>; }<br>
+                        &lt;/<span class="tag">style</span>&gt;
+                    </code></pre>
+                    <div style="border: 1px solid #ccc; padding: 10px; background-color: #f0f0f0; border-radius: 5px;">
+                        Contenido con fondo gris claro.
+                    </div>
+                </li>
+                <li>
+                    <strong>&lt;script&gt;</strong>: Define o enlaza un script de JavaScript, que puede ser utilizado para agregar interactividad y funcionalidad dinámica al documento.
+                    <pre class="code"><code>
+                        &lt;<span class="tag">script</span> src="<span class="attribute">script.js</span>"&gt;&lt;/<span class="tag">script</span>&gt;
+                    </code></pre>
+                    <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
+                        <script src="script.js"></script>
+                    </div>
+                </li>
+                <li>
+                    <strong>&lt;body&gt;</strong>: Contiene el contenido visible del documento, como texto, imágenes y otros elementos HTML. Es la parte más importante, ya que es lo que los usuarios ven al visitar la página.
+                    <pre class="code"><code>
+                        &lt;<span class="tag">body</span>&gt;<br>
+                        &nbsp;&nbsp;&lt;<span class="tag">h1</span>&gt;Bienvenido a Mi Página Web&lt;/<span class="tag">h1</span>&gt;<br>
+                        &lt;/<span class="tag">body</span>&gt;
+                    </code></pre>
+                    <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
+                        <h1>Bienvenido a Mi Página Web</h1>
+                    </div>
+                </li>
+            </ul>
+        </section>                
+                
+        <section>
+            <h2>Sección y Estructura del Contenido</h2>
+            <ul>
+                <li>
+                    <strong>&lt;header&gt;</strong>: Define el encabezado de una sección o del documento, que generalmente contiene títulos, logotipos y elementos de navegación.
+                    <pre class="code"><code>
+                        &lt;<span class="tag">header</span>&gt;&lt;<span class="tag">h1</span>&gt;Título Principal&lt;/<span class="tag">h1</span>&gt;&lt;/<span class="tag">header</span>&gt;
+                    </code></pre>
+                    <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
+                        <h1>Título Principal</h1>
+                    </div>
+                </li>
+                <li>
+                    <strong>&lt;nav&gt;</strong>: Contenedor para enlaces de navegación, que ayuda a los usuarios a moverse entre diferentes secciones de un sitio web.
+                    <pre class="code"><code>
+                        &lt;<span class="tag">nav</span>&gt;&lt;<span class="tag">a</span> href="<span class="attribute">pagina1.html</span>"&gt;Página 1&lt;/<span class="tag">a</span>&gt;&lt;<span class="tag">a</span> href="<span class="attribute">pagina2.html</span>"&gt;Página 2&lt;/<span class="tag">a</span>&gt;&lt;/<span class="tag">nav</span>&gt;
+                    </code></pre>
+                    <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
+                        <nav>
+                            <a href="pagina1.html">Página 1</a>
+                            <a href="pagina2.html">Página 2</a>
+                        </nav>
+                    </div>
+                </li>
+                <li>
+                    <strong>&lt;section&gt;</strong>: Define una sección genérica de un documento, que puede contener un conjunto temático de contenido.
+                    <pre class="code"><code>
+                        &lt;<span class="tag">section</span>&gt;&lt;<span class="tag">h2</span>&gt;Título de la Sección&lt;/<span class="tag">h2</span>&gt;&lt;<span class="tag">p</span>&gt;Contenido de la sección.&lt;/<span class="tag">p</span>&gt;&lt;/<span class="tag">section</span>&gt;
+                    </code></pre>
+                    <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
+                        <section>
+                            <h2>Título de la Sección</h2>
+                            <p>Contenido de la sección.</p>
+                        </section>
+                    </div>
+                </li>
+                <li>
+                    <strong>&lt;article&gt;</strong>: Representa un contenido independiente y autocontenido que puede ser distribuido o reutilizado de manera independiente (como un artículo de noticias).
+                    <pre class="code"><code>
+                        &lt;<span class="tag">article</span>&gt;&lt;<span class="tag">h2</span>&gt;Título del Artículo&lt;/<span class="tag">h2</span>&gt;&lt;<span class="tag">p</span>&gt;Este es un artículo.&lt;/<span class="tag">p</span>&gt;&lt;/<span class="tag">article</span>&gt;
+                    </code></pre>
+                    <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
+                        <article>
+                            <h2>Título del Artículo</h2>
+                            <p>Este es un artículo.</p>
+                        </article>
+                    </div>
+                </li>
+                <li>
+                    <strong>&lt;aside&gt;</strong>: Representa contenido adicional que está relacionado de manera indirecta con el contenido principal, como un bloque de información, una barra lateral o una nota.
+                    <pre class="code"><code>
+                        &lt;<span class="tag">aside</span>&gt;Este es un contenido adicional.&lt;/<span class="tag">aside</span>&gt;
+                    </code></pre>
+                    <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
+                        <aside>Este es un contenido adicional.</aside>
+                    </div>
+                </li>
+                <li>
+                    <strong>&lt;footer&gt;</strong>: Define el pie de página de un documento o sección, que generalmente contiene información sobre derechos de autor, enlaces de contacto y otra información relacionada.
+                    <pre class="code"><code>
+                        &lt;<span class="tag">footer</span>&gt;&lt;<span class="tag">p</span>&gt;© 2024 Mi Página Web&lt;/<span class="tag">p</span>&gt;&lt;/<span class="tag">footer</span>&gt;
+                    </code></pre>
+                    <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
+                        <footer>
+                            <p>© 2024 Mi Página Web</p>
+                        </footer>
+                    </div>
+                </li>
+            </ul>
+        </section>                        
+
+        <section>
+            <h2>Encabezados y Texto</h2>
+            <ul>
+                <li>
+                    <strong>&lt;h1&gt; - &lt;h6&gt;</strong>: Encabezados que definen títulos y subtítulos en un documento HTML. &lt;h1&gt; es el más importante y &lt;h6&gt; el menos importante.
+                    <pre class="code"><code>
+                        &lt;<span class="tag">h1</span>&gt;Título Principal&lt;/<span class="tag">h1</span>&gt;
+                    </code></pre>
+                    <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
+                        <h1>Título Principal</h1>
+                    </div>
+                </li>
+                <li>
+                    <strong>&lt;p&gt;</strong>: Define un párrafo de texto. Se utiliza para agrupar contenido textual en bloques.
+                    <pre class="code"><code>
+                        &lt;<span class="tag">p</span>&gt;Este es un párrafo de texto.&lt;/<span class="tag">p</span>&gt;
+                    </code></pre>
+                    <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
+                        <p>Este es un párrafo de texto.</p>
+                    </div>
+                </li>
+                <li>
+                    <strong>&lt;blockquote&gt;</strong>: Se utiliza para citar en bloque. Generalmente se usa para citas largas o importantes.
+                    <pre class="code"><code>
+                        &lt;<span class="tag">blockquote</span>&gt;Esta es una cita en bloque.&lt;/<span class="tag">blockquote</span>&gt;
+                    </code></pre>
+                    <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
+                        <blockquote>Esta es una cita en bloque.</blockquote>
+                    </div>
+                </li>
+                <li>
+                    <strong>&lt;pre&gt;</strong>: Define texto que se muestra con formato preformateado, manteniendo espacios y saltos de línea.
+                    <pre class="code"><code>
+                        &lt;<span class="tag">pre</span>&gt;Texto preformateado&lt;/<span class="tag">pre</span>&gt;
+                    </code></pre>
+                    <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
+                        <pre>Texto preformateado</pre>
+                    </div>
+                </li>
+                <li>
+                    <strong>&lt;b&gt;</strong>: Muestra texto en negrita sin darle un énfasis semántico. Es puramente visual.
+                    <pre class="code"><code>
+                        &lt;<span class="tag">b</span>&gt;Texto en negrita&lt;/<span class="tag">b</span>&gt;
+                    </code></pre>
+                    <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
+                        <b>Texto en negrita</b>
+                    </div>
+                </li>
+                <li>
+                    <strong>&lt;strong&gt;</strong>: Muestra texto fuerte con un énfasis semántico. Se considera importante para el contenido.
+                    <pre class="code"><code>
+                        &lt;<span class="tag">strong</span>&gt;Texto fuerte&lt;/<span class="tag">strong</span>&gt;
+                    </code></pre>
+                    <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
+                        <strong>Texto fuerte</strong>
+                    </div>
+                </li>
+                <li>
+                    <strong>&lt;i&gt;</strong>: Muestra texto en cursiva sin dar un énfasis semántico. Usado generalmente para texto estilizado.
+                    <pre class="code"><code>
+                        &lt;<span class="tag">i</span>&gt;Texto en cursiva&lt;/<span class="tag">i</span>&gt;
+                    </code></pre>
+                    <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
+                        <i>Texto en cursiva</i>
+                    </div>
+                </li>
+                <li>
+                    <strong>&lt;em&gt;</strong>: Muestra texto enfatizado. Indica que el texto tiene un énfasis especial.
+                    <pre class="code"><code>
+                        &lt;<span class="tag">em</span>&gt;Texto enfatizado&lt;/<span class="tag">em</span>&gt;
+                    </code></pre>
+                    <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
+                        <em>Texto enfatizado</em>
+                    </div>
+                </li>
+                <li>
+                    <strong>&lt;mark&gt;</strong>: Resalta texto, indicado que es relevante o importante.
+                    <pre class="code"><code>
+                        &lt;<span class="tag">mark</span>&gt;Texto resaltado&lt;/<span class="tag">mark</span>&gt;
+                    </code></pre>
+                    <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
+                        <mark>Texto resaltado</mark>
+                    </div>
+                </li>
+                <li>
+                    <strong>&lt;small&gt;</strong>: Muestra texto más pequeño que el texto normal.
+                    <pre class="code"><code>
+                        &lt;<span class="tag">small</span>&gt;Texto pequeño&lt;/<span class="tag">small</span>&gt;
+                    </code></pre>
+                    <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
+                        <small>Texto pequeño</small>
+                    </div>
+                </li>
+                <li>
+                    <strong>&lt;sup&gt;</strong>: Define texto como superíndice, que aparece elevado en relación al texto normal.
+                    <pre class="code"><code>
+                        &lt;<span class="tag">sup</span>&gt;Texto en superíndice&lt;/<span class="tag">sup</span>&gt;
+                    </code></pre>
+                    <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
+                        <sup>Texto en superíndice</sup>
+                    </div>
+                </li>
+                <li>
+                    <strong>&lt;sub&gt;</strong>: Define texto como subíndice, que aparece por debajo de la línea base.
+                    <pre class="code"><code>
+                        &lt;<span class="tag">sub</span>&gt;Texto en subíndice&lt;/<span class="tag">sub</span>&gt;
+                    </code></pre>
+                    <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
+                        <sub>Texto en subíndice</sub>
+                    </div>
+                </li>
+                <li>
+                    <strong>&lt;br&gt;</strong>: Inserta un salto de línea, separando el texto en líneas diferentes.
+                    <pre class="code"><code>
+                        &lt;<span class="tag">br</span>&gt;
+                    </code></pre>
+                    <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
+                        <span>Texto antes del salto<br>Texto después del salto</span>
+                    </div>
+                </li>
+                <li>
+                    <strong>&lt;hr&gt;</strong>: Dibuja una línea horizontal en el documento, comúnmente utilizada como separador.
+                    <pre class="code"><code>
+                        &lt;<span class="tag">hr</span>&gt;
+                    </code></pre>
+                    <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
+                        <hr>
+                    </div>
+                </li>
+                <li>
+                    <strong>&lt;abbr&gt;</strong>: Define una abreviatura o acrónimo, que puede tener un atributo "title" para proporcionar más información.
+                    <pre class="code"><code>
+                        &lt;<span class="tag">abbr</span> title="<span class="attribute">Asociación Internacional de Estudiantes</span>"&gt;AIE&lt;/<span class="tag">abbr</span>&gt;
+                    </code></pre>
+                    <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
+                        <abbr title="Asociación Internacional de Estudiantes">AIE</abbr>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Listas</h2>
+            <ul>
+                <li>
+                    <strong>&lt;ul&gt;</strong>: Define una lista desordenada. Los elementos de la lista se marcan con viñetas.
+                    <pre class="code"><code>
+                        &lt;<span class="tag">ul</span>&gt;
+                            &lt;<span class="tag">li</span>&gt;Elemento 1&lt;/<span class="tag">li</span>&gt;
+                            &lt;<span class="tag">li</span>&gt;Elemento 2&lt;/<span class="tag">li</span>&gt;
+                        &lt;/<span class="tag">ul</span>&gt;
+                    </code></pre>
+                    <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
+                        <ul>
+                            <li>Elemento 1</li>
+                            <li>Elemento 2</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <strong>&lt;ol&gt;</strong>: Define una lista ordenada. Los elementos de la lista se numeran automáticamente.
+                    <pre class="code"><code>
+                        &lt;<span class="tag">ol</span>&gt;
+                            &lt;<span class="tag">li</span>&gt;Elemento 1&lt;/<span class="tag">li</span>&gt;
+                            &lt;<span class="tag">li</span>&gt;Elemento 2&lt;/<span class="tag">li</span>&gt;
+                        &lt;/<span class="tag">ol</span>&gt;
+                    </code></pre>
+                    <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
+                        <ol>
+                            <li>Elemento 1</li>
+                            <li>Elemento 2</li>
+                        </ol>
+                    </div>
+                </li>
+                <li>
+                    <strong>&lt;dl&gt;</strong>: Define una lista de definiciones. Contiene términos y sus descripciones.
+                    <pre class="code"><code>
+                        &lt;<span class="tag">dl</span>&gt;
+                            &lt;<span class="tag">dt</span>&gt;Término 1&lt;/<span class="tag">dt</span>&gt;
+                            &lt;<span class="tag">dd</span>&gt;Descripción del término 1&lt;/<span class="tag">dd</span>&gt;
+                        &lt;/<span class="tag">dl</span>&gt;
+                    </code></pre>
+                    <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
+                        <dl>
+                            <dt>Término 1</dt>
+                            <dd>Descripción del término 1</dd>
+                        </dl>
+                    </div>
+                </li>
+            </ul>
+        </section>                        
+
+        <section>
+            <h2>Enlaces e Imágenes</h2>
+            <ul>
+                <li>
+                    <strong>&lt;a&gt;</strong>: Define un enlace a otra página o recurso. Se utiliza el atributo <code>href</code> para especificar la URL del destino.
+                    <pre class="code"><code>
+                        &lt;<span class="tag">a</span> href="https://www.ejemplo.com"&gt;Visitar Ejemplo&lt;/<span class="tag">a</span>&gt;
+                    </code></pre>
+                    <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px; text-align: center;">
+                        <a href="https://www.ejemplo.com">Visitar Ejemplo</a>
+                    </div>
+                </li>
+                <li>
+                    <strong>&lt;img&gt;</strong>: Inserta una imagen en el documento. Se requiere el atributo <code>src</code> para la ruta de la imagen y <code>alt</code> para una descripción alternativa.
+                    <pre class="code"><code>
+                        &lt;<span class="tag">img</span> src="img/imagen.jpg" alt="Descripción de la imagen"&gt;
+                    </code></pre>
+                    <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px; text-align: center;">
+                        <img src="img/imagen.jpg" alt="Descripción de la imagen" style="max-width: 50px; height: auto; display: block; margin: 0 auto;">
+                    </div>
+                </li>
+                <li>
+                    <strong>&lt;figure&gt;</strong>: Contenedor para contenido gráfico, como imágenes o diagramas, que puede incluir una leyenda opcional.
+                    <pre class="code"><code>
+                        &lt;<span class="tag">figure</span>&gt;<br>
+                            &nbsp;&nbsp;&lt;<span class="tag">img</span> src="img/imagen.jpg" alt="Descripción"&gt;<br>
+                            &nbsp;&nbsp;&lt;<span class="tag">figcaption</span>&gt;Leyenda de la imagen&lt;/<span class="tag">figcaption</span>&gt;<br>
+                        &lt;/<span class="tag">figure</span>&gt;
+                    </code></pre>
+                    <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px; text-align: center;">
+                        <figure>
+                            <img src="img/imagen.jpg" alt="Descripción" style="max-width: 50px; height: auto; display: block; margin: 0 auto;">
+                            <figcaption>Leyenda de la imagen</figcaption>
+                        </figure>
+                    </div>
+                </li>
+                <li>
+                    <strong>&lt;figcaption&gt;</strong>: Proporciona una leyenda para el contenido gráfico dentro de un elemento <code>&lt;figure&gt;</code>.
+                    <pre class="code"><code>
+                        &lt;<span class="tag">figcaption</span>&gt;Esta es una leyenda&lt;/<span class="tag">figcaption</span>&gt;
+                    </code></pre>
+                    <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px; text-align: center;">
+                        <figcaption>Esta es una leyenda</figcaption>
+                    </div>
+                </li>
+            </ul>
+        </section>        
+        
+        <section>
+            <h2>Tablas</h2>
+            <ul>
+                <li>
+                    <strong>&lt;table&gt;</strong>: Define una tabla en el documento. Es el contenedor principal para todos los elementos de la tabla.
+                    <pre class="code"><code>
+                        &lt;<span class="tag">table</span>&gt;<br>
+                        &lt;/<span class="tag">table</span>&gt;
+                    </code></pre>
+                    <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9; border-radius: 5px;">
+                        <table>
+                            <tr>
+                                <th>Encabezado 1</th>
+                                <th>Encabezado 2</th>
+                            </tr>
+                            <tr>
+                                <td>Contenido 1</td>
+                                <td>Contenido 2</td>
+                            </tr>
+                        </table>
+                    </div>
+                </li>
+                <li>
+                    <strong>&lt;tr&gt;</strong>: Define una fila en la tabla. Debe estar contenida dentro de una etiqueta <code>&lt;table&gt;</code>.
+                    <pre class="code"><code>
+                        &lt;<span class="tag">tr</span>&gt;<br>
+                            &nbsp;&nbsp;&lt;<span class="tag">td</span>&gt;Contenido de la celda&lt;/<span class="tag">td</span>&gt;<br>
+                        &lt;/<span class="tag">tr</span>&gt;
+                    </code></pre>
+                </li>
+                <li>
+                    <strong>&lt;th&gt;</strong>: Define una celda de encabezado en la tabla, que generalmente se usa para títulos de columnas y filas. El texto en las celdas de encabezado se muestra en negrita y centrado por defecto.
+                    <pre class="code"><code>
+                        &lt;<span class="tag">th</span>&gt;Encabezado de la Tabla&lt;/<span class="tag">th</span>&gt;
+                    </code></pre>
+                </li>
+                <li>
+                    <strong>&lt;td&gt;</strong>: Define una celda de datos en la tabla, que puede contener texto, imágenes u otros elementos HTML.
+                    <pre class="code"><code>
+                        &lt;<span class="tag">td</span>&gt;Contenido de la celda&lt;/<span class="tag">td</span>&gt;
+                    </code></pre>
+                </li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Formularios</h2>
+            <ul>
+                <li>
+                    <strong>&lt;form&gt;</strong>: Contenedor para elementos de formulario. Se utiliza para agrupar y enviar datos a un servidor.
+                    <pre class="code"><code>
+                        &lt;<span class="tag">form</span> action="enviar.php" method="post"&gt;<br>
+                        &lt;/<span class="tag">form</span>&gt;
+                    </code></pre>
+                </li>
+                <li>
+                    <strong>&lt;input&gt;</strong>: Campo de entrada de datos, que puede ser de varios tipos, como texto, contraseña, radio, etc.
+                    <pre class="code"><code>
+                        &lt;<span class="tag">input</span> type="text" name="nombre"&gt;
+                    </code></pre>
+                </li>
+                <li>
+                    <strong>&lt;textarea&gt;</strong>: Área de texto que permite ingresar múltiples líneas de texto. Es ideal para comentarios o descripciones.
+                    <pre class="code"><code>
+                        &lt;<span class="tag">textarea</span> name="comentarios"&gt;&lt;/<span class="tag">textarea</span>&gt;
+                    </code></pre>
+                </li>
+                <li>
+                    <strong>&lt;select&gt;</strong>: Lista desplegable que permite al usuario seleccionar una opción de un conjunto de opciones.
+                    <pre class="code"><code>
+                        &lt;<span class="tag">select</span> name="opcion"&gt;<br>
+                            &nbsp;&nbsp;&lt;<span class="tag">option</span> value="1"&gt;Opción 1&lt;/<span class="tag">option</span>&gt;<br>
+                        &lt;/<span class="tag">select</span>&gt;
+                    </code></pre>
+                </li>
+                <li>
+                    <strong>&lt;button&gt;</strong>: Botón que puede ser utilizado para enviar formularios o realizar otras acciones.
+                    <pre class="code"><code>
+                        &lt;<span class="tag">button</span> type="submit"&gt;Enviar&lt;/<span class="tag">button</span>&gt;
+                    </code></pre>
+                </li>
+                <li>
+                    <strong>&lt;label&gt;</strong>: Etiqueta para un elemento de formulario, que proporciona una descripción accesible para el campo correspondiente.
+                    <pre class="code"><code>
+                        &lt;<span class="tag">label</span> for="nombre"&gt;Nombre:&lt;/<span class="tag">label</span>&gt;<br>
+                        &lt;<span class="tag">input</span> type="text" id="nombre"&gt;
+                    </code></pre>
+                </li>
+            </ul>
+        </section>                        
+        
+        <footer class="bg-light text-center p-3 mt-5">
+            <p class="footer-text">&copy; 2024 - Introducción a HTML y CSS</p>
+            <p class="footer-text">Aprende los fundamentos de HTML y CSS con ejemplos prácticos.</p>
+            <div class="social-media">
+                <a href="#" class="footer-link">Facebook</a>
+                <a href="#" class="footer-link">Twitter</a>
+                <a href="#" class="footer-link">Instagram</a>
+            </div>
+            <p class="footer-text">Contáctanos: <a href="mailto:info@tuwebsite.com" class="footer-link">info@tuwebsite.com</a></p>
+        </footer>              
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
